@@ -120,6 +120,7 @@ function trace(){
 }
 
 function formatNumber(_num, _retain){
+	return _num.toFixed(4);
 	_retain = _retain || 100;
 	return Math.round(_num * _retain) / _retain;
 }
